@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .head-img{
+        background-image: url('./image/head-img.png');
+        background-size: 100% 100%; 
+    }
+    .img1{
+        background-image: url('./image/img2.jpeg');
+        background-size: 100% 100%; 
+    }
+    .img3{
+        background-image: url('./image/img3.png');
+        background-size: 100% 100%; 
+    }
+    .img5{
+        background-image: url('./image/img5.png');
+        background-size: 100% 100%; 
+    }
+    .text-align-right{
+        text-align: right;
+    }
+    .text-align-center{
+        text-align: center;
+    }
+
+    /* *{
+        border: 1px solid black;
+    } */
+    body{
+        margin: 0;
+        background-color: #eee;
+    }
+    .flex{
+        display: flex;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .row{
+        flex-direction: row;
+    }
+
+    .touming{
+        opacity:0.5;
+        background-color: black;
+    }
+
+    .touming:hover{
+        animation: myfirst1 0.5s;
+        -webkit-animation: myfirst1 0.5s; /* Safari 与 Chrome */
+        opacity:0.9;
+        background-color: black;
+    }
+
+    @keyframes myfirst1
+    {
+        from {
+            opacity:0.5;
+            background-color: black;
+        }
+        to {
+            opacity:0.9;
+            background-color: black;
+        }
+    }
+    @-webkit-keyframes myfirst1
+    {
+        from {
+            opacity:0.5;
+            background-color: black;
+        }
+        to {
+            opacity:0.9;
+            background-color: black;
+        }
+    }
+
+    .touming2{
+        opacity:0.7;
+    }
+
+    /* 阴影 */
+    .shadow {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+    }
+    
+    /* 动画 */
+    .animation
+    {
+        animation: myfirst 5s;
+        -webkit-animation: myfirst 5s; /* Safari 与 Chrome */
+    }
+
+    @keyframes myfirst
+    {
+        from {
+            transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg); /* Safari 与 Chrome */
+        }
+        to {
+            transform: rotateY(360deg);
+            -webkit-transform: rotateY(360deg); /* Safari 与 Chrome */
+        }
+    }
+    
+    @-webkit-keyframes myfirst /* Safari 与 Chrome */
+    {
+        from {
+            transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg); /* Safari 与 Chrome */
+        }
+        to {
+            transform: rotateY(360deg);
+            -webkit-transform: rotateY(360deg); /* Safari 与 Chrome */
+        }
+    }
+</style>
+
+<body>
+    <div class="flex column">
+        <!-- 头部 -->
+        <div  style="height: 200px; color: white;" class="head-img shadow">
+            <div style="padding-right: 15px;" class="text-align-right">
+                <span>商业Bu合作</span>
+                <span>·</span>
+                <span>联系我</span>
+            </div>
+            <div style="justify-content: start; align-items: center;" class="flex">
+                
+            </div>
+
+
+        </div>
+        
+        <!-- 第一内容区 -->
+        <div  style="height: 520px;" class="flex">
+            <!-- 左 -->
+            <div style="width: 65%;" class="flex">
+                <!-- 左 -->
+                <div style="width: 65%; justify-content: center; align-items: center;" class="flex column">
+                    <div style="width: 65%; height: 280px;" class="flex img3 shadow"></div>
+                    <div style="width: 80%; margin-left: 50px; margin-top: 20px;">
+                        做页面最烦恼的是，在选择素材和制定动作时候陷入选择性障碍，选好的东西看两眼又感觉不好看。
+                        然后找新的素材，再看两眼，又觉得不好看，然后再找新的素材，永远找不到好看的。。。
+                    </div>
+                </div>
+                <!-- 右 -->
+                <div style="width: 35%; justify-content: center; align-items: center;" class="flex column">
+                    <div style="height: 350px; width: 70%;" class="img5 animation shadow"></div>
+                </div>
+            </div>
+            
+            <!-- 右 -->
+            <div style="width: 35%; padding-top: 120px;">
+                <h1>Welcome</h1>
+                <p style="margin-left: 50px; padding-right: 50px ">
+                    这里KaiXi的个人主页，制作这个静态页面呢，是因为最近在学一些前端的内容。
+                    主要是练习一下CSS以便后续在React开发中的工作上的需要。后续后还会更新该静态页
+                    面，欢迎喜欢编程的小伙伴联系我一起学习探讨。
+                </P>
+            </div>
+        </div>
+
+        <!-- 第二内容区 -->
+        <div style="height: 200px;" class="img1 shadow">
+            <div style="height: 200px; justify-content: center; align-items: center;" class="touming flex column">
+                <div style="color: rgb(255, 255, 255); font-size: 38px;" class="content">Write something</div>
+                
+                <div style="color: rgb(255, 255, 255); border: 1px solid white; padding: 2px 10px 2px 10px; margin-top: 10px;">umm...了解更多(404...ing)</div>
+            </div>
+        </div>
+
+        
+        <!-- 第三内容区 -->
+        <div  style="height: 800px;" class="flex">
+    </div>
+</body>
+</html>
